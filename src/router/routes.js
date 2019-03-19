@@ -6,22 +6,40 @@ import Search from "../pages/Search/Search.vue"
 
 import Profile from "../pages/Profile/Profile.vue"
 
+import Login from "../pages/Login/login.vue"
+
 export default [
   {
     path:"/msite",
-    component:Msite
+    component:Msite,
+    meta: {
+      isShow: true
+    }
   },
   {
     path:"/order",
-    component:Order
+    component:Profile,
+    meta: {
+      isShow: true
+    }
   },
   {
     path:"/profile",
-    component:Profile
+    component:Order,
+    meta: {
+      isShow: true
+    }
   },
   {
     path:"/search",
-    component:Search
+    component:Search,
+    meta: {
+      isShow: true
+    }
+  },
+  {
+    path:"/login",
+    component:Login
   },
   {
     path:"/",
